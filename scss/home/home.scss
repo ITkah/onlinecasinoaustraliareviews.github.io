@@ -552,8 +552,33 @@
             }
         }
     }
+    .sidebars {
+        @media (max-width: 990px) {
+            grid-row-start: 1;
+        }
+    }
     .sidebars_wrap {
         box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+        .unchor {
+            padding: 10px 15px;
+            li {
+                margin-bottom: 7px;
+                padding-bottom: 7px;
+                border-bottom: 1px solid gray;
+                a {
+                    font: 400 1.125rem 'Roboto', sans-serif;
+                    color: #000;
+                    @media (max-width: 990px) {
+                        font: 400 1rem 'Roboto', sans-serif;    
+                    }
+                }
+            }
+            li:last-child {
+                margin: 0;
+                padding: 0;
+                border: none;
+            }
+        }
         .sidebars_title {
             background: #063f70;
             padding: 12px 15px;

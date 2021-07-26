@@ -1,4 +1,9 @@
-
+$(".unchor").on("click","a", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top - 30;
+    $('body,html').animate({scrollTop: top}, 1500);
+});
 
 $(".header_bottom_nav li").each(function() {
     this_li = $(this);

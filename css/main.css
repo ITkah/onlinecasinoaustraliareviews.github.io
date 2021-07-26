@@ -52,7 +52,7 @@ header {
         padding: 0 10px;
         padding-right: 15px; } }
     .header_top .mob_title .logo {
-      height: 30px;
+      height: 40px;
       max-width: 100%;
       -o-object-fit: cover;
          object-fit: cover; }
@@ -237,7 +237,7 @@ header {
           padding: 0 10px;
           padding-right: 15px; } }
       .header_bottom .header_bottom_wrap .header_bottom_nav .mob_title .logo {
-        height: 30px;
+        height: 40px;
         max-width: 100%;
         -o-object-fit: cover;
            object-fit: cover; }
@@ -1087,9 +1087,28 @@ header {
           font: 400 1rem/24px 'Roboto', sans-serif; }
       .home_page_wrap .content_item .about_casino .about_casino_item:last-child {
         margin: 0; }
+  @media (max-width: 990px) {
+    .home_page_wrap .sidebars {
+      grid-row-start: 1; } }
   .home_page_wrap .sidebars_wrap {
     -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
             box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2); }
+    .home_page_wrap .sidebars_wrap .unchor {
+      padding: 10px 15px; }
+      .home_page_wrap .sidebars_wrap .unchor li {
+        margin-bottom: 7px;
+        padding-bottom: 7px;
+        border-bottom: 1px solid gray; }
+        .home_page_wrap .sidebars_wrap .unchor li a {
+          font: 400 1.125rem 'Roboto', sans-serif;
+          color: #000; }
+          @media (max-width: 990px) {
+            .home_page_wrap .sidebars_wrap .unchor li a {
+              font: 400 1rem 'Roboto', sans-serif; } }
+      .home_page_wrap .sidebars_wrap .unchor li:last-child {
+        margin: 0;
+        padding: 0;
+        border: none; }
     .home_page_wrap .sidebars_wrap .sidebars_title {
       background: #063f70;
       padding: 12px 15px;
@@ -1250,6 +1269,300 @@ header {
         margin: 0;
         padding: 0;
         border: none; }
+
+.home_output {
+  border: 2px solid #eee;
+  padding: 20px 15px;
+  margin-bottom: 15px; }
+  .home_output h1, .home_output h2, .home_output h3, .home_output h4, .home_output h5 {
+    font: 700 1.25rem 'Roboto', sans-serif;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border-bottom: 2px solid #eee; }
+  .home_output ul, .home_output ol {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    border: 1px solid #93dbff;
+    background-color: #F7FCFF;
+    padding: 10px;
+    margin: 10px 0; }
+    .home_output ul li, .home_output ol li {
+      position: relative;
+      font: 400 .95rem/22px 'Roboto', sans-serif;
+      padding-left: 12px; }
+      .home_output ul li::after, .home_output ol li::after {
+        content: '';
+        height: 6px;
+        width: 6px;
+        background: #063f70;
+        position: absolute;
+        display: block;
+        border-radius: 50%;
+        left: 0;
+        top: 7px; }
+  .home_output p {
+    font: 400 .95rem/22px 'Roboto', sans-serif; }
+    .home_output p a, .home_output p span {
+      color: #063f70; }
+    .home_output p a {
+      text-decoration: underline; }
+    .home_output p img {
+      max-width: 100%;
+      float: left;
+      margin: 10px;
+      height: auto;
+      -o-object-fit: cover;
+         object-fit: cover; }
+      @media (max-width: 990px) {
+        .home_output p img {
+          float: none;
+          display: block;
+          margin: 0 auto; } }
+
+.sports_info_wrap {
+  margin-bottom: 15px;
+  border: 2px solid #eee;
+  padding: 20px 15px;
+  margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 15px; }
+  @media (max-width: 990px) {
+    .sports_info_wrap {
+      grid-template-columns: 1fr 1fr 1fr; } }
+  @media (max-width: 576px) {
+    .sports_info_wrap {
+      grid-gap: 10px;
+      grid-template-columns: 1fr 1fr; } }
+  .sports_info_wrap .sports_item {
+    border: 1px solid #93dbff;
+    background: #f7fcff;
+    padding: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .sports_info_wrap .sports_item img {
+      margin-bottom: 10px; }
+    .sports_info_wrap .sports_item p {
+      color: #114361;
+      font: 500 1rem 'Roboto', sans-serif; }
+
+.best_sport_casino {
+  margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-gap: 20px;
+  padding: 15px;
+  background: #fefbdb; }
+  @media (max-width: 1200px) {
+    .best_sport_casino {
+      grid-template-columns: 1fr; } }
+  .best_sport_casino .best_sport_img img {
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    margin: 0 auto;
+    display: block; }
+  .best_sport_casino .best_sport_info_wrap {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    grid-gap: 15px;
+    -webkit-box-align: start;
+    -webkit-align-items: start;
+        -ms-flex-align: start;
+            align-items: start; }
+    @media (max-width: 990px) {
+      .best_sport_casino .best_sport_info_wrap {
+        grid-template-columns: 1fr;
+        grid-gap: 20px; } }
+    .best_sport_casino .best_sport_info_wrap .list_best_wrap ul {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 7px;
+      margin-bottom: 10px; }
+      .best_sport_casino .best_sport_info_wrap .list_best_wrap ul li {
+        padding-left: 20px;
+        font: 400 .87rem/22px 'Roboto', sans-serif;
+        position: relative; }
+        .best_sport_casino .best_sport_info_wrap .list_best_wrap ul li::after {
+          content: '';
+          background: url(../img/main/check.svg) no-repeat center center;
+          background-size: 15px 15px;
+          height: 15px;
+          width: 15px;
+          position: absolute;
+          left: 0;
+          top: 5px; }
+    .best_sport_casino .best_sport_info_wrap .read {
+      text-decoration: underline;
+      color: #063f70;
+      font: 700 1rem 'Roboto', sans-serif; }
+    .best_sport_casino .best_sport_info_wrap .pay_best_box {
+      margin-bottom: 15px; }
+      .best_sport_casino .best_sport_info_wrap .pay_best_box p {
+        margin-bottom: 12px;
+        font: 500 1rem 'Roboto', sans-serif; }
+      .best_sport_casino .best_sport_info_wrap .pay_best_box .pay_img_wrap {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        @media (max-width: 990px) {
+          .best_sport_casino .best_sport_info_wrap .pay_best_box .pay_img_wrap {
+            -webkit-justify-content: space-around;
+                -ms-flex-pack: distribute;
+                    justify-content: space-around; } }
+      .best_sport_casino .best_sport_info_wrap .pay_best_box img {
+        max-width: 100%;
+        max-width: 100px;
+        margin: 0 10px;
+        max-height: 40px;
+        -o-object-fit: contain;
+           object-fit: contain; }
+  .best_sport_casino .register {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 15px 10px;
+    background: #357a10;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font: 700 1.125rem 'Roboto', sans-serif; }
+    @media (max-width: 1200px) {
+      .best_sport_casino .register {
+        grid-column-start: 1;
+        grid-column-end: 2; } }
+  .best_sport_casino .best_sport_info_title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 10px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .best_sport_casino .best_sport_info_title .best_sport_title {
+      font: 700 1.4rem 'Roboto', sans-serif; }
+
+.rules_forms {
+  margin-bottom: 15px;
+  border: 2px solid #eee;
+  padding: 20px 15px;
+  margin-bottom: 15px; }
+  .rules_forms .rules_forms_title {
+    font: 700 1.25rem 'Roboto', sans-serif;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border-bottom: 2px solid #eee; }
+  .rules_forms .rules_forms_item {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    grid-gap: 25px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee; }
+    @media (max-width: 990px) {
+      .rules_forms .rules_forms_item {
+        grid-template-columns: 1fr;
+        grid-gap: 5px; } }
+    .rules_forms .rules_forms_item img {
+      -o-object-fit: cover;
+         object-fit: cover; }
+    .rules_forms .rules_forms_item .rules_title {
+      margin-bottom: 5px;
+      font: 700 1.125rem 'Roboto', sans-serif; }
+    .rules_forms .rules_forms_item .rules_text {
+      font: 400 .95rem/22px 'Roboto', sans-serif; }
+  .rules_forms .rules_forms_item:last-child {
+    border: none;
+    padding: 0;
+    margin: 0; }
+
+.contact_wrap {
+  border: 2px solid #eee;
+  padding: 20px 15px;
+  margin-bottom: 15px; }
+  .contact_wrap .contact_title {
+    font: 700 1.25rem 'Roboto', sans-serif;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border-bottom: 2px solid #eee; }
+  .contact_wrap .contact_text {
+    font: 400 .95rem/22px 'Roboto', sans-serif; }
+    .contact_wrap .contact_text a, .contact_wrap .contact_text span {
+      color: #063f70; }
+    .contact_wrap .contact_text a {
+      text-decoration: underline; }
+  .contact_wrap .form_wrap {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px; }
+    .contact_wrap .form_wrap textarea {
+      resize: none;
+      outline: none;
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      border: 1px solid #eee;
+      padding: 10px;
+      height: 150px;
+      font: 400 1rem 'Roboto', sans-serif; }
+    .contact_wrap .form_wrap input {
+      font: 400 1rem 'Roboto', sans-serif;
+      padding: 10px;
+      outline: none;
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      border: 1px solid #eee; }
+    .contact_wrap .form_wrap button {
+      color: #fff;
+      padding: 15px;
+      width: 100%;
+      border: none;
+      letter-spacing: 1.1px;
+      font: 700 1.125rem 'Roboto', sans-serif;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      background: #063f70; }
 
 footer .footer_nav {
   margin-bottom: 35px;
